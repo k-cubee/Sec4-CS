@@ -16,11 +16,11 @@ highest = {}
 
 # Get the highest score in every level
 for i in range(len(scores)):
-    level, score = scores[i][2], scores[i][1]
-    if str(scores[i][1]) not in highest:
-        highest[scores[i][1]] = scores[i][2]
-    elif highest[scores[i][1]] > scores[i][2]:
-        highest[scores[i][1]] = scores[i][2]
+    level, score = scores[i][1], scores[i][2]
+    if level not in highest:
+        highest[level] = score
+    elif highest[level] < score:
+        highest[level] = score
 
 # Print scores
 for i in highest:
