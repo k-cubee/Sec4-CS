@@ -24,4 +24,6 @@ for i in range(len(scores)):
 
 # Print scores
 for i in highest:
-    print(f"Level-{i} = {highest[i]}")
+    for j in range(len(scores)):
+        if highest[i] == scores[j][2] and i == scores[j][1]:
+            print(f"Level-{i} = {scores[j][0]}, {highest[i]}")
