@@ -39,15 +39,15 @@ def enter(album_list):
 
 def search(album_list):
     search_name = input("Enter the name of the ablum to search: ")
-    count = 0
+    found = False
 
     for i in album_list:
-        count += 1
         if i.title == search_name:
+            found = True
             print(
                 f"Title: {i.title}, Artist: {i.name}, Year: {i.year}, Genre: {i.genre}")
 
-    if count == len(album_list) and album_list[len(album_list)-1].title != search_name:
+    if found == False:
         print("Not found")
 
 
