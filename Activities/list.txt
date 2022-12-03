@@ -1,0 +1,5 @@
+['Emily', 20]
+['Charlie', 50]
+['Susan', 100]
+['Mark', 30]
+['Eve', 40]
