@@ -18,7 +18,6 @@ while index != power + 1 or power == -1:
     coef /= math.factorial(index)
     rst = round(first_coef * second_coef * coef, 10)
     index += 1
-    fr_count += 1
 
     if ((power % 2 != 0 and power % 2 != 1) or power <= -1) and index == 7:
         print("...")
@@ -32,3 +31,5 @@ while index != power + 1 or power == -1:
         print(end=" + ")
     else:
         print()
+
+    fr_count += 1
